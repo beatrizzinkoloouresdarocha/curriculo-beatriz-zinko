@@ -1,7 +1,7 @@
 .minha-div {
-    background-color: #ffffff
+    background-color:#59effc; 
     ; /* Cor de fundo vermelha (pode ser uma cor em hexadecimal, rgb, rgba, ou nome de cor) */
-    color: #ffffff; /* Cor do texto (branco, por exemplo) */
-    padding: 20px; /* Espaçamento interno */
-    border: 1px solid #000000; /* Borda preta de 1 pixel */
+    color: #59effc; /* Cor do texto (branco, por exemplo) */
+    padding: 80px; /* Espaçamento interno */
+    border: 1px solid #ffffff; /* Borda preta de 1 pixel */
 }
