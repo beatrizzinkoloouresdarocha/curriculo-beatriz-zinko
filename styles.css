@@ -1,7 +1,23 @@
-.minha-div {
-    background-color:#59effc; 
-    ; /* Cor de fundo vermelha (pode ser uma cor em hexadecimal, rgb, rgba, ou nome de cor) */
-    color: #59effc; /* Cor do texto (branco, por exemplo) */
-    padding: 100px; /* Espaçamento interno */
-    border: 1px solid #59effc; /* Borda preta de 1 pixel */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #ffffff; /* cor de fundo branca */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
 }
