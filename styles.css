@@ -23,7 +23,11 @@ header p {
     margin: 5px 0;
 }
 
-.container h2 {
-    text-align: center; /* Centraliza o título */
+#container{
+    text-align: center; 
+    background-color: #ffffff; /* cor de fundo branca */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #000000; /* Borda preta de 1 pixel */
+    margin: 10px auto;
 }
 
