@@ -22,3 +22,8 @@ header h1 {
 header p {
     margin: 5px 0;
 }
+
+.container h2 {
+    text-align: center; /* Centraliza o título */
+}
+
