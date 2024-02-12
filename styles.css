@@ -24,7 +24,7 @@ header p {
 }
 
 #container{
-    text-align: center; 
+    text-align:left; /* Alinha o texto à esquerda */
     background-color: #ffffff; /* cor de fundo branca */
     padding: 10px; /* Espaçamento interno */
     border: 1px solid #000000; /* Borda preta de 1 pixel */
