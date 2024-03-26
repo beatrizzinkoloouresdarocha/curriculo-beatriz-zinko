@@ -1,23 +1,24 @@
 /* Estilos globais */
 body {
+    background-color: #14cbdb;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    background-color: #f4f4f4;
+    background-color: #14cbdb;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
 }
 
 h1 {
-    color: #333;
+    color: #2c35da;
 }
 
 p {
-    color: #555;
+    color: #1f8c92;
 }
 
 /* Estilos específicos para as seções e títulos */
