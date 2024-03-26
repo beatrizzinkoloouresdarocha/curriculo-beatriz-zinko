@@ -5,91 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Div com Cor de Fundo</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos CSS aqui */
+        .container {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+        }
+        h2 {
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-        <h1>Beatriz Zinko Loures Da Rocha</h1>
-        <p>Curitiba  PR São Braz  Rua willi lipel 15</p>
-        <p>41 985080956</p>
-        <p>zinkobeatriz@gmail.com</p>
-</header>
+            <h1>Beatriz Zinko Loures Da Rocha</h1>
+            <p>Curitiba  PR São Braz  Rua willi lipel 15</p>
+            <p>41 985080956</p>
+            <p>zinkobeatriz@gmail.com</p>
+        </header>
     </div>
-</div>
-  <!-- Nova div para adicionar mais informações -->
-  <div class id="container">
-    <h2>EXPERIÊNCIA PROFISSIONAL</h2>
-    <p>.IMOBILIÁRIA IMOBBE</p>
-    <p>CONSULTORA DE VENDAS-AUTÔNOMO</p>
-    <p>VENDAS DE ÍMOVEL CASAS E APARTAMENTOS COM PARCERIA COM A CAIXA ECONÔMICA FEDERAL E DIVULGAÇÃO NAS REDES SÓCIAIS.</p>
-    <p>.COPEL</p>
-    <p>ESTÁGIO ADMINISTRATIVO</p>
-    <p>EU TRABALHEI USANDO PLANILHAS DO EXECEL,PARA REGISTRAR ANEXOS,CADASTRAR DATAS E FAZER CONFERÊNCIAS,E CONVITE DE PREPOSTO.</p>
-</div>
-</div>
 
-</div>
-</div>
-  <!-- Nova div para adicionar mais informações -->
-  <div class id="container">
-    <h2>EDUCAÇÃO</h2>
-    <p>.COLÉGIO ESTADUAL PROF ANA MARIA VERNICK KAVA</p>
-    <p>ENSINO MÉDIO COMPLETO</p>
-    <p>.UNINTER</p>
-    <p>CURSO TÉCNICO DE ADMINISTRAÇÃO</p>
-    <p>.PROCEMP</p>
-    <p>.FUNDAÇÃO BRADESCO</p>
-    <p>EXECEL BÁSICO</p>
-    <p>.FUNDAÇÃO BRADESCO</p>
-    <p>EXECEL INTERMEDIÁRIO</p>
-    <p>.PRIME CURSOS</p>
-    <p>INFORMÁTICA AVANÇADA</p>
-    <p>.PRIME CURSOS</p>
-    <p>PACOTE OFFICE</p>
-    <p>.PRIME CURSOS</p>
-    <p>ADMINISTRAÇÃO DE VENDAS</p>
-    <p>.FUNDAÇÃO BRADESCO</p>
-    <p>CURSO CRIEI UM SITE SIMPLES USANDO HTML,CSS E JAVASCRIPTS 80</p>
-    <p>.PRIME CURSOS</p>
-    <p>INFORMÁTICA BÁSICA</p>
-    <p>.PRIME CURSOS</p>
-    <p>ESPANHOL BÁSICO</p>
-    <p>.PRIME CURSOS</p>
-    <p>CONSULTORIA EMPRESARIAL BÁSICO</p>
-    <p>.PRIME CURSOS</p>
-    <p>ASSISTENTE ADMINISTRATIVO</p>
-    <p>.FAJON</p>
-    <p>CURSO DE AGENTE ADMINISTRATIVO E A ORGANIZAÇÃO E GERENCIAMENTO DE informações ARQUIVOS E PASTAS EDITORES</p>
-    <p>DE TEXTOS SLIDES TABELAS E PLANILHAS 100</p>
-    <p>.UNINTER</p>
-    <p>GRADUAÇÃO ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</p>
-</div>
-</div>
+    <!-- Divs para adicionar mais informações -->
+    <div class="container">
+        <h2 onclick="toggleSection('experiencia')">EXPERIÊNCIA PROFISSIONAL</h2>
+        <div id="experiencia" class="hidden">
+            <p>.IMOBILIÁRIA IMOBBE</p>
+            <p>CONSULTORA DE VENDAS-AUTÔNOMO</p>
+            <p>VENDAS DE ÍMOVEL CASAS E APARTAMENTOS COM PARCERIA COM A CAIXA ECONÔMICA FEDERAL E DIVULGAÇÃO NAS REDES SÓCIAIS.</p>
+            <p>.COPEL</p>
+            <p>ESTÁGIO ADMINISTRATIVO</p>
+            <p>EU TRABALHEI USANDO PLANILHAS DO EXECEL,PARA REGISTRAR ANEXOS,CADASTRAR DATAS E FAZER CONFERÊNCIAS,E CONVITE DE PREPOSTO.</p>
+        </div>
+    </div>
 
-</div>
-</div>
-  <!-- Nova div para adicionar mais informações -->
-  <div class id="container">
-    <h2>HABILIDADES</h2>
-    <p>.TRABALHO EM EQUIPE</p>
-    <p>.DEDICAÇÃO,PRODUTIVIDADE</p>
-    <p>.APRENDO RÁPIDO</p>
-    <p>.SOU PONTUAL</p>
-    <p>.SEMPRE MANTENHO AS COISAS EM ORDEM NO TRABALHO</p>
-</div>
-</div>
+    <div class="container">
+        <h2 onclick="toggleSection('educacao')">EDUCAÇÃO</h2>
+        <div id="educacao" class="hidden">
+            <p>.COLÉGIO ESTADUAL PROF ANA MARIA VERNICK KAVA</p>
+            <p>ENSINO MÉDIO COMPLETO</p>
+            <!-- Outras informações de educação aqui -->
+        </div>
+    </div>
 
-</div>
-</div>
-  <!-- Nova div para adicionar mais informações -->
-  <div class id="container">
-    <h2>REFERÊNCIAS</h2>
-    <p>.IMOBILIÁRIA-IMÓBBE</p>
-    <p>CONSULTORA DE VENDAS-AUTÔNOMA</p>
-    <p>zinkobeatriz@gmail.com</p>
-    <p>Meu contato: 41985080956</p>
-</div>
-</div>
+    <div class="container">
+        <h2 onclick="toggleSection('habilidades')">HABILIDADES</h2>
+        <div id="habilidades" class="hidden">
+            <p>.TRABALHO EM EQUIPE</p>
+            <!-- Outras habilidades aqui -->
+        </div>
+    </div>
 
+    <div class="container">
+        <h2 onclick="toggleSection('referencias')">REFERÊNCIAS</h2>
+        <div id="referencias" class="hidden">
+            <p>.IMOBILIÁRIA-IMÓBBE</p>
+            <!-- Outras referências aqui -->
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
